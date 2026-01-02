@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/DashboardSidebar.css';
+import darkLogo from '../assets/dark-logo.svg';
 
 const DashboardSidebar = ({ currentProject, projects = [], userRole = 'user' }) => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -19,7 +20,7 @@ const DashboardSidebar = ({ currentProject, projects = [], userRole = 'user' }) 
     <div className="sidebar-menu">
       <div className="cont-up">
         <div className="pre-header">
-          <img width="100" height="32" src="/logo-dark.svg" alt="Código Nativo" />
+          <img width="100" height="32" src={darkLogo} alt="Código Nativo" />
           <div className="profile" onClick={() => setShowDropdown(!showDropdown)}>
             <div className="letters">{getUserInitials('Usuario')}</div>
           </div>

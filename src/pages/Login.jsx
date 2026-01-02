@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import '../styles/Login.css';
-import darkLogo from '../assets/light-logo.svg';
+import lightLogo from '../assets/light-logo.svg';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -55,7 +55,7 @@ const Login = () => {
       <section className="login-form">
         <div className="form-container">
           <div className="titles">
-            <img width="140" height="44" src={darkLogo} alt="Código Nativo" />
+            <img width="140" height="44" src={lightLogo} alt="Código Nativo" />
             <h1>Iniciar sesión</h1>
             <p>Accede a tu dashboard</p>
           </div>
